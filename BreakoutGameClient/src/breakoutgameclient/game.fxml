@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.gameController">
+<children>
+      <Label fx:id="lblScoreAdd" layoutX="68.0" layoutY="14.0" prefHeight="23.0" prefWidth="29.0" text="0" visible="false">
+         <font>
+            <Font name="Book Antiqua" size="18.0" />
+         </font>
+      </Label>
+        <Circle fx:id="circle" fill="DODGERBLUE" layoutX="300.0" layoutY="300.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+        <Rectangle fx:id="paddle" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="10.0" layoutX="256.0" layoutY="344.0" stroke="BLACK" strokeType="INSIDE" width="88.0" />
+        <Rectangle fx:id="bottomZone" arcHeight="2.0" arcWidth="5.0" fill="TRANSPARENT" height="10.0" layoutY="395.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
+      <Label fx:id="lblScore" layoutX="14.0" layoutY="14.0">
+         <font>
+            <Font name="Book Antiqua" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMain" layoutX="174.0" layoutY="14.0" prefHeight="108.0" prefWidth="340.0" text="Brick Breaker">
+         <font>
+            <Font size="43.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
